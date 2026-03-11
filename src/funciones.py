@@ -1,2 +1,4 @@
 def notasPerdidas(notas):
-    return sum(1 for nota in notas if nota <3)
+    p = sum(1 for nota in notas if nota <3)
+    print("Cantidad de notas perdidas:",p)
+    return p
