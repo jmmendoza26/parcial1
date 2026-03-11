@@ -1,22 +1,14 @@
-def calcular_maxima(notas):
+def maxima_nota(notas):
     """
-    Función que recibe un arreglo de notas y retorna la nota máxima
-    
-    Parámetros:
-    notas: lista de números (entre 0 y 5)
-    
-    Retorna:
-    - 0 si la lista está vacía
-    - La nota máxima si la lista tiene elementos
+    Retorna la máxima nota de un arreglo.
+    Si el arreglo está vacío, retorna None.
+    Si alguna nota está fuera de rango (0-5), lanza una excepción.
     """
-    if not notas:  # Si la lista está vacía
-        return 0
-    
-    # Encontrar la nota máxima
-    maxima = notas[0]  # Suponemos que la primera es la máxima
+    if not notas:
+        return None
     
     for nota in notas:
-        if nota > maxima:
-            maxima = nota
+        if nota < 0 or nota > 5:
+            raise ValueError(f"Nota {nota} está fuera del rango permitido (0-5)")
     
-    return maxima
+    return max(notas)
