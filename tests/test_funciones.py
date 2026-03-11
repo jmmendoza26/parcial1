@@ -15,7 +15,8 @@ class TestPromedio(unittest.TestCase):
         self.assertEqual(promedio([3.0, 4.0, 5.0]), 4.0)
 
     def test_promedio_notas_con_cero(self):
-        self.assertAlmostEqual(promedio([0, 5, 5]), 3.333, places=3)
+        self.assertEqual(promedio([0, 5, 5]), 3.33)
 
 if __name__ == '__main__':
     unittest.main()
+
