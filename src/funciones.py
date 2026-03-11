@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 def notasPerdidas(notas):
     p = sum(1 for nota in notas if nota <3)
     print("Cantidad de notas perdidas:",p)
@@ -7,7 +6,7 @@ def promedio(notas):
     if not notas:
         return 0
     return round(sum(notas) / len(notas), 2)
-=======
+
 def maxima_nota(notas):
     """
     Retorna la máxima nota de un arreglo.
@@ -22,4 +21,4 @@ def maxima_nota(notas):
             raise ValueError(f"Nota {nota} está fuera del rango permitido (0-5)")
     
     return max(notas)
->>>>>>> origin/jsmoreno86
+
