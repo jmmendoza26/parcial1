@@ -1,5 +1,4 @@
 import unittest
-<<<<<<< HEAD
 from src.funciones import notasPerdidas
 
 
@@ -21,8 +20,6 @@ class TestContarNotasPerdidas(unittest.TestCase):
         notas = []
         self.assertEqual(notasPerdidas(notas), 0)
 
-if __name__ == "__main__":
-    unittest.main()
 import sys
 import os
 
@@ -41,10 +38,6 @@ class TestPromedio(unittest.TestCase):
     def test_promedio_notas_con_cero(self):
         self.assertEqual(promedio([0, 5, 5]), 3.33)
 
-if __name__ == '__main__':
-    unittest.main()
-
-=======
 import sys
 import os
 
@@ -69,4 +62,3 @@ class TestMaximaNota(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
->>>>>>> origin/jsmoreno86
