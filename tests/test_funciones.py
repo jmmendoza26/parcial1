@@ -1,6 +1,9 @@
 import unittest
-from src.funciones import notasPerdidas
+import sys
+import os
 
+
+from src.funciones import notasPerdidas
 
 class TestContarNotasPerdidas(unittest.TestCase):
 
@@ -20,11 +23,6 @@ class TestContarNotasPerdidas(unittest.TestCase):
         notas = []
         self.assertEqual(notasPerdidas(notas), 0)
 
-import sys
-import os
-
-sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'src'))
-
 from src.funciones import promedio
 
 class TestPromedio(unittest.TestCase):
@@ -37,12 +35,6 @@ class TestPromedio(unittest.TestCase):
 
     def test_promedio_notas_con_cero(self):
         self.assertEqual(promedio([0, 5, 5]), 3.33)
-
-import sys
-import os
-
-# Agregar src al path para poder importar functions.py
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 
 from src.funciones import maxima_nota
 

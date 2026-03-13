@@ -1,7 +1,12 @@
 def notasPerdidas(notas):
-    p = sum(1 for nota in notas if nota <3)
-    print("Cantidad de notas perdidas:",p)
-    return p
+    perdidas = 0
+    for nota in notas:
+        if nota<0 or nota>5:
+            raise ValueError(f"Nota {nota} está fuera del rango permitido (0-5)") 
+        if nota <3:
+            perdidas += 1
+    return perdidas
+    
 def promedio(notas):
     if not notas:
         return 0
