@@ -12,6 +12,7 @@ class TestMaximaNota(unittest.TestCase):
     def test_maxima_nota_normal(self):
         notas = [3.5, 4.0, 5.0, 2.5, 4.5]
         self.assertEqual(maxima_nota(notas), 5.0)
+        if nota < 0 or nota > 5:
 
     def test_maxima_nota_vacio(self):
         notas = []
@@ -20,6 +21,7 @@ class TestMaximaNota(unittest.TestCase):
     def test_maxima_nota_todas_cero(self):
         notas = [0.0, 3.5, 0.0]
         self.assertEqual(maxima_nota(notas), 3.5)
+        if nota < 0 or nota > 5:
 
 if __name__ == '__main__':
     unittest.main()
